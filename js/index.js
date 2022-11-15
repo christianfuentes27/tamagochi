@@ -1,7 +1,35 @@
-import api from "./api.js";
+import myForm from "./form.js";
 
-api.init({
-    "greet":"que tal amigo",
-    "addCheckbox":"3",
-    "addRange": "1"
+myForm.initForm({
+    "id": "myform",
+    "elements": [
+        {
+            "element" : "label",
+            "content" : "Subtitles"
+        },
+        {
+            "element" : "input",
+            "type" : "checkbox",
+            "id" : "check-1"
+        },
+        {
+            "element" : "label",
+            "content" : "Volume"
+        },
+        {
+            "element" : "input",
+            "type" : "range",
+            "id" : "range-1"
+        },
+        {
+            "element" : "label",
+            "content" : "Confirm"
+        },
+        {
+            "element" : "input",
+            "type" : "button",
+            "value" : "OK",
+            "id" : "button-1"
+        }
+    ],
 });

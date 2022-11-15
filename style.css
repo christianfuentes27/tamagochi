@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form > * {
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    width: 300px;
+    height: 100px;
+    border-radius: 25%;
+    background-color: black;
+}
+
+.checkbox {
+    width: 50px;
+    height: 50%;
+}
