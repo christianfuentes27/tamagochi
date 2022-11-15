@@ -1,3 +1,8 @@
+@font-face {
+    font-family: supercell;
+    src: url(font/supercell.ttf);
+}
+
 html, body {
     height: 100%;
 }
@@ -6,6 +11,7 @@ body {
     background-color: #444;
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -21,13 +27,46 @@ form > * {
 }
 
 .checkbox-container {
-    width: 300px;
-    height: 100px;
-    border-radius: 25%;
+    width: 150px;
+    height: 75px;
+    border-radius: 100px;
     background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container:hover {
+    cursor: pointer;
 }
 
 .checkbox {
-    width: 50px;
-    height: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.confirm-btn {
+    width: 150px;
+    height: 50px;
+    background-image: url(img/button.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: supercell;
+    font-size: 16px;
+}
+
+.confirm-btn:hover {
+    cursor: pointer;
+}
+
+h4 {
+    font-family: supercell;
+    font-size: 16px;
+    text-align: center;
 }

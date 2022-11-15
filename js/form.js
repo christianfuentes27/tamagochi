@@ -1,4 +1,4 @@
-var form = null;
+var form;
 
 function initForm(config) {
     form = document.createElement('form');
@@ -10,6 +10,7 @@ function initForm(config) {
         }
     }
     document.body.appendChild(form);
+    myForm.form = form;
 }
 
 function handleElements(elements) {

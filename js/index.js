@@ -1,4 +1,5 @@
 import myForm from "./form.js";
+import myAnimation from "./animation.js";
 
 myForm.initForm({
     "id": "myform",
@@ -33,3 +34,5 @@ myForm.initForm({
         }
     ],
 });
+
+myAnimation.handleEvents(myForm.form);
